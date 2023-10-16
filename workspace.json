@@ -1,0 +1,6 @@
+{
+  "name": "workspacepage",
+  "image": "node:16.3.0",
+  "tools": ["git", "make"],
+  "ports": ["5173"]
+}
