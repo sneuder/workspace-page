@@ -2,4 +2,8 @@ FROM node:16.3.0
 
 WORKDIR /app
 
-CMD ["sleep", "infinity"]
+EXPOSE 5173
+
+RUN npm i
+
+CMD ["npm", "run", "dev"]
