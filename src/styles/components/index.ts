@@ -3,7 +3,7 @@ import Button from "./button";
 
 const components = {
   Heading,
-  Button
-}
+  Button,
+};
 
-export default components
+export default components;

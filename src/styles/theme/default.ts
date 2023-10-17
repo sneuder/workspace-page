@@ -1,12 +1,12 @@
 const styles = {
   global: {
-    'html, body': {
+    "html, body": {
       fontFamily: "body",
     },
     h2: {
-      fontFamily: 'body',
+      fontFamily: "body",
     },
   },
-}
+};
 
-export default styles
+export default styles;

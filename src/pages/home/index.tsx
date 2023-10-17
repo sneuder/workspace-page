@@ -1,9 +1,7 @@
-import Heroe from "./sections/heroe"
+import Heroe from "./sections/heroe";
 
 const Home = () => {
-  return (
-    <Heroe />
-  )
-}
+  return <Heroe />;
+};
 
-export default Home
+export default Home;

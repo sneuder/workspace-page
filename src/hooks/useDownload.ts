@@ -7,24 +7,23 @@ const useDownload = () => {
     setDownloading(true);
 
     try {
-      const anchor = document.createElement('a');
+      const anchor = document.createElement("a");
       anchor.href = url;
 
-      anchor.download = url.split('/').pop() as string;
+      anchor.download = url.split("/").pop() as string;
       anchor.click();
 
-      anchor.remove()
+      anchor.remove();
     } catch (error) {
-      console.error('Error downloading file:', error);
+      console.error("Error downloading file:", error);
     } finally {
       setTimeout(() => {
         setDownloading(false);
-      }, 2000)
+      }, 2000);
     }
   };
 
   return { downloadFile, downloading };
+};
 
-}
-
-export default useDownload
+export default useDownload;
