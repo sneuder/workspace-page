@@ -23,13 +23,16 @@ const Heroe = () => {
       </Grid>
 
       <Grid templateColumns='repeat(2, 1fr)' gap="16px" w="fit-content">
-        <Button variant="primary" rightIcon={<BsWindows />} onClick={() => downloadWindows.downloadFile(linkFiles.windows)} >
+        <Button variant="primary" rightIcon={<BsWindows />} onClick={() => downloadWindows.downloadFile(linkFiles.windows)} isLoading={downloadWindows.downloading} loadingText='Downloading' spinnerPlacement='end'
+        >
           Donwload for
         </Button>
-        <Button variant="primary" rightIcon={<VscTerminalLinux />} onClick={() => downloadLinux.downloadFile(linkFiles.linux)}>
+        <Button variant="primary" rightIcon={<VscTerminalLinux />} onClick={() => downloadLinux.downloadFile(linkFiles.linux)} isLoading={downloadLinux.downloading} loadingText='Downloading' spinnerPlacement='end'>
           Donwload for
         </Button>
       </Grid>
+
+      <Text color="silverGray" fontSize={12}>Beta 1.0.0</Text>
     </Flex>
   )
 }

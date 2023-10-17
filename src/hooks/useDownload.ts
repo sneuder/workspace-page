@@ -17,7 +17,9 @@ const useDownload = () => {
     } catch (error) {
       console.error('Error downloading file:', error);
     } finally {
-      setDownloading(false);
+      setTimeout(() => {
+        setDownloading(false);
+      }, 2000)
     }
   };
 
